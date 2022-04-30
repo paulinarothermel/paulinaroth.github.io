@@ -1,0 +1,168 @@
+:root{
+    --primary:#F24109;
+    --secondary:#1D243E;
+    --secondary-85:rgba(29,36,62,0.85);
+    --white:#fff;
+    --light-grey:#f3f3f3;
+    --grey:#ccc;
+    --dark-grey:#666;
+    --dark2-grey:#333;
+    --dark3-grey:#222;
+    --black:#000;
+    --white-50:rgba(255,255,255,0.5);
+    --black-50:rgba(0,0,0,0.5);
+
+    --font:'Nunito', sans-serif;
+}
+
+html{
+    font-family: var(--font) !important;
+}
+
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 120rem !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: var(--font) !important;
+}
+h1, h2, h3{
+    font-weight: 700 !important;
+}
+h4, h5, h6, p, a{
+    font-weight: 400 !important;
+}
+a{
+    color: var(--secondary);
+}
+.btn {
+    color: var(--white) !important;
+    background-color: var(--primary) !important;
+}
+.btn:hover {
+    background-color: var(--grey) !important;
+    color: var(--dark3-grey) !important;
+}
+.fa-solid{
+    color: var(--primary);
+}
+
+.background-grey{
+    background-color: var(--light-grey);
+}
+
+/* ******* Styles ******* */
+
+
+/*Heading lines*/
+.h2-lines{
+    display:inline-block;
+    position:relative;
+    left:5rem;
+  }
+  
+.h2-lines::after,.h2-lines::before{
+    content:"";
+    position:absolute;
+    width:4.2rem;
+    height:.15rem;
+    background-color: var(--primary);
+    top:1.3rem;
+  }
+.h2-lines::before{
+    left: -5rem;   
+  }
+.h2-lines::after{
+    right: -5rem;   
+  }
+
+/* Header */
+.header {
+    min-height: 53rem;
+    background-image: url(../imagenes/heroimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+}
+@media (min-width: 768px){
+    .header{
+        min-height: 57rem;
+    }
+}
+.header h1{
+    color: var(--secondary);
+    padding-bottom: 2rem;
+}
+.header h3{
+    color: var(--secondary);
+}
+.header-nav{
+    background-color: var(--secondary-85);
+    text-align: center;
+    margin-bottom: 13rem;
+}
+
+.justify-end-to-center{
+    display: flex;
+    justify-content: flex-end;
+}
+@media (min-width: 642px){
+    .justify-end-to-center{
+        justify-content: center;
+    }
+}
+/* Header Icon lines*/
+.icon-lines{
+    display:inline-block;
+    position:relative;
+    left:6rem;
+  }
+  
+.icon-lines::after,.icon-lines::before{
+    content:"";
+    position:absolute;
+    width:5.3rem;
+    height:.25rem;
+    background-color: var(--primary);
+    top:0.8rem;
+  }
+.icon-lines::before{
+    left: -5.5rem;   
+  }
+.icon-lines::after{
+    left: 4.1rem;   
+  }
+/*Skills*/
+.sk-img{
+    max-width: 5rem;
+    display: block;
+    margin: 0px auto;
+}
+
+/*Education*/
+.edu-img{
+    max-width: 7rem; 
+    height: auto; 
+    position: relative;
+    margin: 1rem auto;
+}
+
+/*Projects*/
+.card-height1{
+    height: 95%;
+}
+
+/*Contact*/
+.contact-img{
+    margin: 1rem auto 0 auto;
+}
+.card-height{
+    height: 95%;
+}
+
+/*Footer*/
+.footer{
+    background-color: var(--secondary);
+}
